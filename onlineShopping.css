@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
+    padding: 0px;
 }
 .login-page{
-    height: 90vh;
-    width: 95.3vw;
+    height: 100vh;
+    width: 100%;
     background-image : url("https://res.cloudinary.com/dlbsoo33w/image/upload/v1663838770/black-friday-elements-assortment_fc2y7v.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 5vh;
+    padding-top : 30px;
+    padding-right: 30px;
 }
 .login-form-container{
     height: 300px;
@@ -88,3 +92,139 @@ body{
     font-size: 10px;
     font-family: "Roboto";
 }
+.navbar-container{
+    height: 10vh;
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    font-family : "Roboto";
+    position: sticky;
+    top : 0px;
+}
+.logout-btn-style{
+    height: 40px;
+    width: 100px;
+    background-color: #66ffff;
+    border:none;
+    border-radius : 5px;
+    box-shadow : 1px 1px 1px 1px cyan;
+    font-weight: 500;
+    cursor : pointer;
+}
+.website-heading{
+    font-family: "MS Comic Sans";
+}
+.search-style{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+.products-container{
+    background-color: rgb(229, 226, 160);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    
+}
+.each-product-container{
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow : 1px 1px 1px 1px gray;
+    margin: 30px;
+    border-radius: 10px;
+}
+.product-image-style{
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+.title-style{
+    font-size: 15px;
+    font-weight: 600;
+    padding-left : 20px;
+}
+.price-style{
+    padding-left : 20px;
+}
+.product-page{
+    display: flex;
+    flex-direction : column;
+    justify-content: flex-start;
+}
+.rating-style{
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-left: 5px;
+}
+.rating-div{
+    display : flex;
+    align-items : center;
+    height: 20px;
+    width: 40px;
+    margin-left: 20px;
+}
+.star-style{
+    color: rgb(18, 160, 113);
+}
+
+
+
+/* From uiverse.io by @adamgiebl */
+.addtocartbtn {
+    background: linear-gradient(-45deg, rgb(75, 97, 88), aquamarine, #27c8b7, rgb(75, 97, 88));
+    background-size: 500% 200%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+   }
+   
+   .addtocartbtn:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+    transition: all ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   .addtocartbtn:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }

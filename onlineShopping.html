@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="onlineShopping.css" />
+    <script src="https://kit.fontawesome.com/92b9bda1f1.js" crossorigin="anonymous"></script>
     <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
 </head>
 <body>
-    <div ng-app = "onlineShoppingApp">
-        <div ng-controller="loginController" class="login-page" ng-hide="hideLoginSignup">
-            <div class="signup-div">
+    <div ng-app = "onlineShoppingApp" ng-controller="loginController">
+        <div  class="login-page" ng-hide="hideLoginSignup">
+            <div class="signup-div" ng-hide="hideLoginSignup">
                 <button class="signup-button" ng-click="signUpClicked()" ng-show="showLogin">Signup</button>
             </div>
             <div class="login-form-container" ng-show="showLogin">
@@ -26,7 +27,7 @@
                 </div>
                 <button class="login-button" ng-click="loginClicked()">Login</button>
             </div>
-            <div class="signup-form-container" ng-show="!showLogin">
+            <div class="signup-form-container" ng-show="!showLogin" >
                 <div class="div-container">
                     <label for="signupUsername" class="login-username-label labelUpclass">Create Username</label>
                     <input ng-model="createdUsername" type="text" class="login-input" id="signupUsername"  ng-focus="labelUp()"/>
@@ -39,13 +40,35 @@
                 </div>
                 <button class="login-button" ng-click="submitClicked()">Submit</button>
             </div>
-            
         </div>
+        <div ng-hide="!hideLoginSignup" class="product-page">
+            <div class="navbar-container">
+                <h1 class="website-heading">Shop & Loop</h1>
+                <p>Home</p>
+                <input type="search" placeholder="Search" class="search-style" ng-model="searchInput" />
+                <p>Cart</p>
+                <button class="logout-btn-style">Logout</button>
+            </div>
+            <div class="products-container">
+                <div class="each-product-container" ng-repeat="eachProduct in products | filter : searchInput">
+                    <img src={{eachProduct.imageUrl}} class="product-image-style" alt={{eachProduct.title}} />
+                    <p class="title-style">{{eachProduct.title}}</p>
+                    <p class="price-style">{{eachProduct.price | currency : "₹" : 2}}</p>
+                    <div class="rating-div">
+                        <i class="fa-solid fa-star star-style"></i>
+                        <span class="rating-style">{{eachProduct.rating}}</span>
+                    </div>
+                    <button class="addtocartbtn">Add to Cart</button>
+                    
+                </div>
+            </div>
+
+        </div>    
+            
+        
         
 
-        <div ng="showHomePage">
-            {{products}}
-        </div>
+        
     </div>
     
     <script src="app.js"></script>
