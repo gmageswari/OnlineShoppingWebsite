@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="onlineShopping.css" />
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app = "onlineShoppingApp">
+        <div ng-controller="loginController" class="login-page" ng-hide="hideLoginSignup">
+            <div class="signup-div">
+                <button class="signup-button" ng-click="signUpClicked()" ng-show="showLogin">Signup</button>
+            </div>
+            <div class="login-form-container" ng-show="showLogin">
+                <div class="div-container">
+                    <label for="loginUsername" class="login-username-label labelUpclass">Username</label>
+                    <input type="text" class="login-input" id="loginUsername"  ng-focus="labelUp()" ng-model="loginUsername"/><br>
+                </div>
+                <div class="div-container">
+                    <label for="loginPassword" class="login-username-label" >Password</label>
+                    <input   type="password" class="login-input" id="loginPassword" ng-focus="labelUp()" ng-model="loginPassword"/>
+                    <p ng-show="showNoInputEnteredPW" class="error-msg" ng-bind="errorMsg"></p>
+                </div>
+                <button class="login-button" ng-click="loginClicked()">Login</button>
+            </div>
+            <div class="signup-form-container" ng-show="!showLogin">
+                <div class="div-container">
+                    <label for="signupUsername" class="login-username-label labelUpclass">Create Username</label>
+                    <input ng-model="createdUsername" type="text" class="login-input" id="signupUsername"  ng-focus="labelUp()"/>
+                    <p ng-show="showNoInputEnteredUN" class="error-msg" ng-bind="errorMsg"></p>
+                </div>
+                <div class="div-container">
+                    <label for="signupPassword" class="login-username-label" >Create Password</label>
+                    <input ng-model="createdPassword" type="password" class="login-input" id="signupPassword" ng-focus="labelUp()"/>
+                    <p ng-show="showNoInputEnteredPW" class="error-msg" ng-bind="errorMsg"></p>
+                </div>
+                <button class="login-button" ng-click="submitClicked()">Submit</button>
+            </div>
+            
+        </div>
+        
+
+        <div ng="showHomePage">
+            {{products}}
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="main.controller.js"></script>
+</body>
+</html>
