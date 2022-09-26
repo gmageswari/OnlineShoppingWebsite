@@ -7,7 +7,8 @@
             "price" : 200,
             "category" : "hat",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916202/hat2_izn88f.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916202/hat2_izn88f.jpg",
+            "incart" : false
         },
         {
             "id" : 2,
@@ -16,7 +17,8 @@
             "price" : 500,
             "category" : "hat",
             "rating" : 4.5,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916202/hat1_uoevfk.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916202/hat1_uoevfk.jpg",
+            "incart" : false
         },
         {
             "id" : 3,
@@ -25,7 +27,8 @@
             "price" : 90000,
             "category" : "camera",
             "rating" : 4.7,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916201/camera1_srli2y.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916201/camera1_srli2y.jpg",
+            "incart" : false
         },
         {
             "id" : 4,
@@ -34,7 +37,8 @@
             "price" : 565,
             "category" : "pen",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916201/pen1_jpiqoa.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916201/pen1_jpiqoa.jpg",
+            "incart" : false
         },
         {
             "id" : 5,
@@ -43,7 +47,8 @@
             "price" : 123000,
             "category" : "camera",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916200/camera4_c2gs0c.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916200/camera4_c2gs0c.jpg",
+            "incart" : false
         },
         {
             "id" : 6,
@@ -52,7 +57,8 @@
             "price" : 999,
             "category" : "pen",
             "rating" : 4.6,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916200/pen3_vb37ds.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916200/pen3_vb37ds.jpg",
+            "incart" : false
         },
         {
             "id" : 7,
@@ -61,7 +67,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916200/pen2_dqotwg.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916200/pen2_dqotwg.jpg",
+            "incart" : false
         },
         {
             "id" : 8,
@@ -70,7 +77,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916199/pen4_rfnyir.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916199/pen4_rfnyir.jpg",
+            "incart" : false
         },
         {
             "id" : 9,
@@ -79,7 +87,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916199/camera2_vgzy4j.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916199/camera2_vgzy4j.jpg",
+            "incart" : false
         },
         {
             "id" : 10,
@@ -88,7 +97,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916198/camera3_yaed8h.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916198/camera3_yaed8h.jpg",
+            "incart" : false
         },
         {
             "id" : 11,
@@ -97,7 +107,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916197/camera5_ppvukr.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916197/camera5_ppvukr.jpg",
+            "incart" : false
         },
         {
             "id" : 12,
@@ -106,7 +117,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916197/laptop4_xevt45.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916197/laptop4_xevt45.jpg",
+            "incart" : false
         },
         {
             "id" : 13,
@@ -115,7 +127,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916197/camera7_lcpoc9.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916197/camera7_lcpoc9.jpg",
+            "incart" : false
         },
         {
             "id" : 14,
@@ -124,7 +137,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916196/mobile2_e1pjbc.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916196/mobile2_e1pjbc.jpg",
+            "incart" : false
         },
         {
             "id" : 15,
@@ -133,7 +147,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916196/camera6_lwcb4i.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916196/camera6_lwcb4i.jpg",
+            "incart" : false
         },
         {
             "id" : 16,
@@ -142,7 +157,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916195/mobile3_ltndvb.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916195/mobile3_ltndvb.jpg",
+            "incart" : false
         },
         {
             "id" : 17,
@@ -151,7 +167,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916195/mobile1_doumtw.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916195/mobile1_doumtw.jpg",
+            "incart" : false
         },
         {
             "id" : 18,
@@ -160,7 +177,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/laptop3_oxi1ii.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/laptop3_oxi1ii.jpg",
+            "incart" : false
         },
         {
             "id" : 19,
@@ -169,7 +187,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/laptop1_m11xli.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/laptop1_m11xli.jpg",
+            "incart" : false
         },
         {
             "id" : 20,
@@ -178,7 +197,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/mobile4_w3cjwp.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/mobile4_w3cjwp.jpg",
+            "incart" : false
         },
         {
             "id" : 21,
@@ -187,7 +207,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/waterbottle1_kz5byr.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/waterbottle1_kz5byr.jpg",
+            "incart" : false
         },
         {
             "id" : 22,
@@ -196,7 +217,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/laptop2_xd2dxm.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916194/laptop2_xd2dxm.jpg",
+            "incart" : false
         },
         {
             "id" : 23,
@@ -205,7 +227,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916193/cactus1_yuqvtf.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916193/cactus1_yuqvtf.jpg",
+            "incart" : false
         },
         {
             "id" : 23,
@@ -214,7 +237,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/cactus2_j4r8cx.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/cactus2_j4r8cx.jpg",
+            "incart" : false
         },
         {
             "id" : 25,
@@ -223,7 +247,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/waterbottle2_j8ohny.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/waterbottle2_j8ohny.jpg",
+            "incart" : false
         },
         {
             "id" : 26,
@@ -232,7 +257,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/waterbottle3_cgm36o.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/waterbottle3_cgm36o.jpg",
+            "incart" : false
         },
         {
             "id" : 27,
@@ -241,7 +267,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/cactus3_vqlbvq.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/cactus3_vqlbvq.jpg",
+            "incart" : false
         },
         {
             "id" : 28,
@@ -250,7 +277,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/wallclock1_c6h5xy.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916192/wallclock1_c6h5xy.jpg",
+            "incart" : false
         },
         {
             "id" : 29,
@@ -259,7 +287,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/sofa1_udluop.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/sofa1_udluop.jpg",
+            "incart" : false
         },
         {
             "id" : 30,
@@ -268,7 +297,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/alarmclock1_k3dw6l.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/alarmclock1_k3dw6l.jpg",
+            "incart" : false
         },
         {
             "id" : 31,
@@ -277,7 +307,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/sofa4_x6t8uh.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/sofa4_x6t8uh.jpg",
+            "incart" : false
         },
         {
             "id" : 32,
@@ -286,7 +317,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/sofa2_pnumne.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916191/sofa2_pnumne.jpg",
+            "incart" : false
         },
         {
             "id" : 33,
@@ -295,7 +327,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916190/wallclock2_pjz1dn.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916190/wallclock2_pjz1dn.jpg",
+            "incart" : false
         },
         {
             "id" : 34,
@@ -304,7 +337,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916189/piano2_rjnyoy.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916189/piano2_rjnyoy.jpg",
+            "incart" : false
         },
         {
             "id" : 35,
@@ -313,7 +347,8 @@
             "price" : 123,
             "category" : "abc",
             "rating" : 4,
-            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916189/mirror1_j0yaeu.jpg"
+            "imageUrl" : "https://res.cloudinary.com/dlbsoo33w/image/upload/v1663916189/mirror1_j0yaeu.jpg",
+            "incart" : false
         }
     ]
 }

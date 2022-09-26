@@ -44,13 +44,17 @@
         <div ng-hide="!hideLoginSignup" class="product-page">
             <div class="navbar-container">
                 <h1 class="website-heading">Shop & Loop</h1>
-                <p>Home</p>
+                <p ng-click="showHome()">Home</p>
                 <input type="search" placeholder="Search" class="search-style" ng-model="searchInput" />
-                <p>Cart</p>
-                <button class="logout-btn-style">Logout</button>
+                <div class="cart-tab-container">
+                    <p ng-click="showCart()">Cart</p>
+                    <p>({{cartItemN}})</p>
+                </div>
+                
+                <button class="logout-btn-style" ng-click="logoutClicked()">Logout</button>
             </div>
-            <div class="products-container">
-                <div class="each-product-container" ng-repeat="eachProduct in products | filter : searchInput">
+            <div class="products-container" ng-show="showProductsContainer">
+                <div class="each-product-container" ng-repeat="eachProduct in products | filter : searchInput" >
                     <img src={{eachProduct.imageUrl}} class="product-image-style" alt={{eachProduct.title}} />
                     <p class="title-style">{{eachProduct.title}}</p>
                     <p class="price-style">{{eachProduct.price | currency : "₹" : 2}}</p>
@@ -58,9 +62,57 @@
                         <i class="fa-solid fa-star star-style"></i>
                         <span class="rating-style">{{eachProduct.rating}}</span>
                     </div>
-                    <button class="addtocartbtn">Add to Cart</button>
-                    
+                    <button class="addtocartbtn" ng-click="addToCartClicked(eachProduct.$$hashKey)" ng-hide="eachProduct.incart">Add to Cart</button>
+                    <button class="removefromcartbtn" ng-click="removeFromCartClicked(eachProduct.$$hashKey)" ng-hide="!eachProduct.incart">Remove From Cart</button>
                 </div>
+            </div>
+            <div class="carts-container" ng-show="showBigPictureCart">
+                <div class="big-picture-container" >
+                    <img src={{clickedPicture.imageUrl}} class="clicked-pic-image-style" alt={{clickedPicture.title}} />
+                    <div class="big-picture-details-container">
+                        <h1>{{clickedPicture.title}}</h1>
+                        <p>{{clickedPicture.description}}</p>
+                        <p>{{clickedPicture.price | currency : "₹" : 2}}</p>
+                        <div class="quantity-container">
+                            <button class="quantity-button" ng-click="minusClicked()">-</button>
+                            <p>{{quantity}}</p>
+                            <button class="quantity-button" ng-click="plusClicked()">+</button>
+                        </div>
+                        <button class="addtocartbtn ok-button" ng-click="addToCart(clickedPicture.$$hashKey)">OK</button>
+                    </div>
+                </div>
+                <div class="each-product-container" ng-repeat="eachProduct in otherProducts | filter : searchInput" ng-hide="showProductsContainer">
+                    <img src={{eachProduct.imageUrl}} class="product-image-style" alt={{eachProduct.title}} />
+                    <p class="title-style">{{eachProduct.title}}</p>
+                    <p class="price-style">{{eachProduct.price | currency : "₹" : 2}}</p>
+                    <div class="rating-div">
+                        <i class="fa-solid fa-star star-style"></i>
+                        <span class="rating-style">{{eachProduct.rating}}</span>
+                    </div>
+                    <button class="addtocartbtn" ng-click="addToCartClicked(eachProduct.$$hashKey)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart" ng-show="showCartContainer">
+                <div class="checkout-container">
+                    <h1 class="total-style">Total : {{findTotal() | currency : "₹" : 2}}</h1>
+                    <button class="removefromcartbtn" ng-click="checkoutClicked()">Checkout</button>
+                </div>
+                <div ng-show="nothingInCart">
+                    <h1>{{cartPara}}</h1>
+                </div>
+                
+                <div class="each-product-container" ng-repeat="eachProduct in cartItems">
+                    <img src={{eachProduct.imageUrl}} class="product-image-style" alt={{eachProduct.title}} />
+                    <p class="title-style">{{eachProduct.title}}</p>
+                    <p class="price-style">{{eachProduct.price * eachProduct.quantity | currency : "₹" : 2}}</p>
+                    <p class="title-style">Quantity : {{eachProduct.quantity}}</p>
+                    <div class="rating-div">
+                        <i class="fa-solid fa-star star-style"></i>
+                        <span class="rating-style">{{eachProduct.rating}}</span>
+                    </div>
+                    <button class="removefromcartbtn" ng-click="removeFromCartIncart(eachProduct.$$hashKey)" ng-hide="!eachProduct.incart">Remove From Cart</button>
+                </div><br>
+                
             </div>
 
         </div>    
