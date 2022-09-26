@@ -25,7 +25,7 @@ app.controller("loginController",function($scope,$http){
                 $scope.products = response.data.products;
             });
             $scope.addToCartClicked = function(key){
-                $scope.quantity = 0;
+                $scope.quantity = 1;
                 $scope.showProductsContainer = false;
                 $scope.showBigPictureCart = true;
                 let bigPictureForCart = $scope.products.filter((eachProduct)=>{
@@ -46,7 +46,7 @@ app.controller("loginController",function($scope,$http){
                 });
     
             }
-            $scope.quantity = 0;
+            $scope.quantity = 1;
             $scope.plusClicked = function(){
                 $scope.quantity = $scope.quantity + 1;
             }
@@ -77,7 +77,7 @@ app.controller("loginController",function($scope,$http){
                 $scope.showProductsContainer = false;
                 if($scope.cartItems.length === 0){
                     $scope.nothingInCart = true;
-                    $scope.cartPara = "Cart is Empty :(";
+                    $scope.cartCheckoutShow = false;
                 }
                 else{
                     $scope.nothingInCart = false;
@@ -97,7 +97,7 @@ app.controller("loginController",function($scope,$http){
                 });
                 $scope.products.map((eachProduct)=>{
                     if(eachProduct.$$hashKey === key){
-                        eachProduct.quantity = 0;
+                        eachProduct.quantity = 1;
                         eachProduct.incart = false;
                     }
                 })
@@ -114,7 +114,7 @@ app.controller("loginController",function($scope,$http){
                 localStorage.setItem('cart',angular.toJson($scope.cartItems));
                 $scope.products.map((eachProduct)=>{
                     if(eachProduct.$$hashKey === key){
-                        eachProduct.quantity = 0;
+                        eachProduct.quantity = 1;
                         eachProduct.incart = false;
                     }
                 })
@@ -139,10 +139,10 @@ app.controller("loginController",function($scope,$http){
             $scope.checkoutClicked = function(){
                 let productArray = $scope.products.map((eachProduct)=>{
                     eachProduct.incart = false;
-                    eachProduct.quantity = 0;
+                    eachProduct.quantity = 1;
                     return eachProduct;
                 });
-                $scope.cartPara = "Thankyou for shopping....";
+                $scope.cartCheckoutShow = true;
                 console.log($scope.products);
                 $scope.products = productArray;
                 console.log($scope.products);

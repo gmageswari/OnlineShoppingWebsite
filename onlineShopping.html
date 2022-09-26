@@ -98,7 +98,8 @@
                     <button class="removefromcartbtn" ng-click="checkoutClicked()">Checkout</button>
                 </div>
                 <div ng-show="nothingInCart">
-                    <h1>{{cartPara}}</h1>
+                    <h1 ng-show="!cartCheckoutShow">Cart is Empty :(</h1>
+                    <cart-Checkout ng-show="cartCheckoutShow"></cart-Checkout>
                 </div>
                 
                 <div class="each-product-container" ng-repeat="eachProduct in cartItems">
@@ -125,5 +126,6 @@
     
     <script src="app.js"></script>
     <script src="main.controller.js"></script>
+    <script src="onlineShopping.directive.js"></script>
 </body>
 </html>
