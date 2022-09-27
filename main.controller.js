@@ -31,7 +31,7 @@ app.controller("loginController",function($scope,$http){
                 let bigPictureForCart = $scope.products.filter((eachProduct)=>{
                     if(eachProduct.$$hashKey === key){
                         return true;
-                        
+
                     }
                 });
                 $scope.otherProducts = $scope.products.filter((eachProduct)=>{
@@ -102,7 +102,7 @@ app.controller("loginController",function($scope,$http){
                         eachProduct.incart = false;
                     }
                 })
-    
+                $scope.cartItemN = $scope.cartItems.length;
                 $scope.showHome();
             }
             $scope.removeFromCartIncart = function(key){
