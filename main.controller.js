@@ -52,7 +52,10 @@ app.controller("loginController",function($scope,$http){
                 $scope.quantity = $scope.quantity + 1;
             }
             $scope.minusClicked = function(){
-                $scope.quantity = $scope.quantity - 1;
+                if($scope.quantity > 1){
+                    $scope.quantity = $scope.quantity - 1;
+                }
+                
             }
             
             $scope.addToCart = function(key){
