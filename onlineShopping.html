@@ -44,10 +44,10 @@
         <div ng-hide="!hideLoginSignup" class="product-page">
             <div class="navbar-container">
                 <h1 class="website-heading">Shop & Loop</h1>
-                <p ng-click="showHome()">Home</p>
+                <p ng-click="showHome()" class="hometab">Home</p>
                 <input type="search" placeholder="Search" class="search-style" ng-model="searchInput" />
-                <div class="cart-tab-container">
-                    <p ng-click="showCart()">Cart</p>
+                <div class="cart-tab-container" >
+                    <p ng-click="showCart()" class="carttab">Cart</p>
                     <p>({{cartItemN}})</p>
                 </div>
                 
